@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Komunitas | Portal Komunitas UBHI</title>
+    <style>
+      .community-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .community-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        border-color: #0d6efd;
+      }
+      .community-img {
+        border: 4px solid #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: border-color 0.2s;
+      }
+      .community-card:hover .community-img {
+        border-color: #0d6efd;
+      }
+      .section-title {
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+      }
+      footer {
+        background: #0d6efd;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 4rem;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"
+          ><i class="bi bi-people-fill me-2"></i>Portal Komunitas UBHI</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html">Kegiatan</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-semibold"
+                href="communities.html"
+                aria-current="page"
+                >Komunitas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-primary text-white text-center mb-5">
+      <div class="container">
+        <h1 class="display-5 fw-bold mb-2">
+          <i class="bi bi-people"></i> Komunitas UBHI
+        </h1>
+        <p class="lead mb-0">
+          Temukan dan bergabung dengan komunitas sesuai minatmu!
+        </p>
+      </div>
+    </section>
+
+    <!-- Communities Section -->
+    <main class="container">
+      <h2 class="section-title text-center">Komunitas Kami</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a
+            href="komunitas-musik.html"
+            class="text-decoration-none text-dark"
+            aria-label="Lihat halaman Komunitas Musik"
+          >
+            <div
+              class="card community-card text-center p-4 border-0 shadow-sm h-100"
+            >
+              <img
+                src="https://images.pexels.com/photos/164712/pexels-photo-164712.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&dpr=2&crop=faces&fit=crop"
+                alt="Komunitas Musik"
+                class="rounded-circle mb-3 community-img"
+                width="90"
+                height="90"
+              />
+              <h5 class="fw-bold mb-1">Komunitas Musik</h5>
+              <span class="badge bg-primary mb-2"
+                ><i class="bi bi-music-note-beamed"></i> Seni & Musik</span
+              >
+              <p class="small text-muted mb-0">
+                Tempat berkumpulnya para pecinta musik dan seni suara.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a
+            href="komunitas-robotik.html"
+            class="text-decoration-none text-dark"
+            aria-label="Lihat halaman Komunitas Robotik"
+          >
+            <div
+              class="card community-card text-center p-4 border-0 shadow-sm h-100"
+            >
+              <img
+                src="https://btkp-diy.or.id/file/media/AI-Robot-Cover.jpg"
+                alt="Komunitas Robotik"
+                class="rounded-circle mb-3 community-img"
+                width="90"
+                height="90"
+              />
+              <h5 class="fw-bold mb-1">Komunitas Robotik</h5>
+              <span class="badge bg-success mb-2"
+                ><i class="bi bi-cpu"></i> Teknologi</span
+              >
+              <p class="small text-muted mb-0">
+                Eksplorasi dunia robotika dan teknologi masa depan.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a
+            href="komunitas-bahasa.html"
+            class="text-decoration-none text-dark"
+            aria-label="Lihat halaman Komunitas Bahasa"
+          >
+            <div
+              class="card community-card text-center p-4 border-0 shadow-sm h-100"
+            >
+              <img
+                src="https://images.pexels.com/photos/256702/pexels-photo-256702.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&dpr=2&crop=faces&fit=crop"
+                alt="Komunitas Bahasa"
+                class="rounded-circle mb-3 community-img"
+                width="90"
+                height="90"
+              />
+              <h5 class="fw-bold mb-1">Komunitas Bahasa</h5>
+              <span class="badge bg-warning text-dark mb-2"
+                ><i class="bi bi-translate"></i> Bahasa</span
+              >
+              <p class="small text-muted mb-0">
+                Belajar dan berbagi pengetahuan tentang bahasa asing.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a
+            href="komunitas-fotografi.html"
+            class="text-decoration-none text-dark"
+            aria-label="Lihat halaman Komunitas Fotografi"
+          >
+            <div
+              class="card community-card text-center p-4 border-0 shadow-sm h-100"
+            >
+              <img
+                src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&dpr=2&crop=faces&fit=crop"
+                alt="Komunitas Fotografi"
+                class="rounded-circle mb-3 community-img"
+                width="90"
+                height="90"
+              />
+              <h5 class="fw-bold mb-1">Komunitas Fotografi</h5>
+              <span class="badge bg-danger mb-2"
+                ><i class="bi bi-camera"></i> Fotografi</span
+              >
+              <p class="small text-muted mb-0">
+                Ekspresikan kreativitasmu melalui lensa kamera.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-5">
+      &copy; 2024 Portal Komunitas UBHI. Semua hak cipta dilindungi.
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
